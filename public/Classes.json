@@ -1,0 +1,103 @@
+[
+    {
+      "className": "Painting Essentials",
+      "img": "https://i.ibb.co/C1d4vDN/four.jpg",
+      "instructorName": "Emily Johnson",
+      "instructorEmail": "emily.johnson@example.com",
+      "availableSeats": 12,
+      "price": 80,
+      "numberOfStudents": 18,
+      "stutus":"Approve",
+      "details": "Learn the fundamental techniques of painting and explore different mediums to express your creativity."
+    },
+    {
+      "className": "Drawing Fundamentals",
+      "img": "https://i.ibb.co/5rTK8Sd/four.webp",
+      "instructorName": "David Thompson",
+      "instructorEmail": "david.thompson@example.com",
+      "availableSeats": 10,
+      "price": 70,
+      "numberOfStudents": 10,
+      "stutus":"Approve",
+      "details": "Master the basics of drawing, from sketching simple shapes to creating detailed compositions."
+    },
+    {
+        "className": "Watercolor Techniques",
+        "img": "https://i.ibb.co/MCXhh8J/one.webp",
+        "instructorName": "Sophie Anderson",
+        "instructorEmail": "sophie.anderson@example.com",
+        "availableSeats": 8,
+        "price": 90,
+        "numberOfStudents": 15,
+        "stutus":"Approve",
+        "details": "Explore the vibrant world of watercolor painting and learn various techniques to create stunning artwork."
+      },
+      {
+        "className": "Sculpting with Clay",
+        "img": "https://i.ibb.co/0G5jXcY/two.webp",
+        "instructorName": "Michael Johnson",
+        "instructorEmail": "michael.johnson@example.com",
+        "availableSeats": 10,
+        "price": 75,
+        "numberOfStudents": 6,
+        "stutus":"Approve",
+        "details": "Discover the art of sculpting with clay and bring your imagination to life through three-dimensional forms."
+      },
+      {
+        "className": "Portrait Drawing",
+        "img": "https://i.ibb.co/Db9skfq/three.webp",
+        "instructorName": "Olivia Davis",
+        "instructorEmail": "olivia.davis@example.com",
+        "availableSeats": 12,
+        "price": 80,
+        "numberOfStudents": 11,
+        "stutus":"Approve",
+        "details": "Learn the intricacies of portrait drawing and capture the likeness and expression of the human face."
+      },
+      {
+        "className": "Landscape Painting",
+        "img": "https://i.ibb.co/Rvbk20B/q.jpg",
+        "instructorName": "Daniel Wilson",
+        "instructorEmail": "daniel.wilson@example.com",
+        "availableSeats": 15,
+        "price": 85,
+        "numberOfStudents": 13,
+        "stutus":"Approve",
+        "details": "Immerse yourself in the beauty of landscapes and learn techniques to paint breathtaking natural scenes."
+      },
+      {
+        "className": "Abstract Art Expression",
+        "img": "https://i.ibb.co/djT5syc/5.jpg",
+        "instructorName": "Emma Thompson",
+        "instructorEmail": "emma.thompson@example.com",
+        "availableSeats": 0,
+        "price": 95,
+        "numberOfStudents": 7,
+        "stutus":"Approve",
+        "details": "Unlock your creativity and explore abstract art techniques to express emotions and ideas on canvas."
+      },
+      {
+        "className": "Printmaking Workshop",
+        "img": "https://i.ibb.co/f4VRcC9/6.jpg",
+        "instructorName": "Benjamin Anderson",
+        "instructorEmail": "benjamin.anderson@example.com",
+        "availableSeats": 12,
+        "price": 70,
+        "numberOfStudents": 9,
+        "stutus":"pending",
+        "details": "Discover the art of printmaking and learn different techniques to create unique and expressive prints."
+      },
+      {
+        "className": "Digital Art and Design",
+        "img": "https://i.ibb.co/f4VRcC9/6.jpg",
+        "instructorName": "Isabella Hernandez",
+        "instructorEmail": "isabella.hernandez@example.com",
+        "availableSeats": 0,
+        "price": 90,
+        "numberOfStudents": 8,
+        "stutus":"Approve",
+        "details": "Explore the world of digital art and design using software tools to create stunning digital artwork."
+      }
+      
+  ]
+  
