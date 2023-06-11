@@ -71,6 +71,7 @@ const Sighin = () => {
         htmlFor="">email*</label>
      <input className="w-full py-2 bg-white pl-3 my-2"
      type="email"
+     placeholder="Your Email"
     {...register("email",{ required: true })} />
      </div>
       
@@ -79,6 +80,7 @@ const Sighin = () => {
      <label className="text-xl " htmlFor="">password*</label>
      <input className="w-full py-2 bg-white pl-3 my-2 "
       type={showPassword ? 'text' : 'password'} 
+      placeholder="Your Password"
      {...register("password", 
      { required: true })} />
       <span
@@ -100,9 +102,9 @@ const Sighin = () => {
       {errors.email && <span className="text-red-600">This field is required</span>}
       <p className="text-red-500">{fireBaseerr}</p>
       
-      <input className="w-full  bg-slate-700 text-white text-xl py-2 my-2" value="Sighin In" type="submit" />
+      <input className="w-full hover:bg-[#134a45]  bg-[#07332F] text-white text-xl py-2 my-2" value="Sighin In" type="submit" />
       <div className="divider">OR</div>
-      <input className="w-full  bg-slate-700 text-white text-xl py-2 my-2" value="Sighin In with gogool" type="submit" />
+     
 
       <p>You have new to website please <Link to="/sighinUp"><span className="font-semibold">SighinUp</span></Link></p>
 

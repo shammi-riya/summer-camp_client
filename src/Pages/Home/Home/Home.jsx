@@ -1,4 +1,5 @@
 import Bannar from "../../../Componenet/Home/Bannar";
+import Instructor from "../../../Componenet/Home/Instructor";
 import Popolarclass from "../../../Componenet/Popolarclass";
 
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Bannar></Bannar>
             <Popolarclass></Popolarclass>
+            <Instructor></Instructor>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Sighin from "../Layout/SighinIn/Sighin";
 import SighinUp from "../Layout/SighinUp/SighinUp";
-import Dashbord from "../Pages/Dashbord/Dashbord";
+
 import Classes from "../Pages/Classes/Classes";
 import Privetroute from "./Privetroute";
 import Test from "../Pages/Test";
@@ -17,12 +17,14 @@ import AddClass from "../Pages/Dashbord/Instractor/AddClass";
 import MyClass from "../Pages/Dashbord/Instractor/MyClass";
 import Pement from "../Pages/Dashbord/Pement/Pement";
 import ManageClass from "../Pages/Dashbord/Admin/ManageClass";
+import AllIntractor from "../Pages/AllIntractor/AllIntractor";
+import ErrElement from "../Pages/ErrElement";
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
-    //   errorElement: <ErrorPage />,
+      errorElement: <ErrElement></ErrElement>,
       children: [
         {
           path: "/",
@@ -31,6 +33,10 @@ import ManageClass from "../Pages/Dashbord/Admin/ManageClass";
         {
           path: "/classes",
           element: <Classes></Classes>
+        },
+        {
+          path: "/allinstractor",
+          element: <AllIntractor></AllIntractor>
         },
       ],
     },
@@ -57,7 +63,7 @@ import ManageClass from "../Pages/Dashbord/Admin/ManageClass";
           },
           {
             path:"pement",
-            element:<Pement></Pement>
+            element:<Privetroute><Pement></Pement></Privetroute>
           },
           //admin 
           {
@@ -77,10 +83,7 @@ import ManageClass from "../Pages/Dashbord/Admin/ManageClass";
             path:"myClass",
             element:<MyClass></MyClass>
           },
-         {
-          path:"dashbords",
-          element:<Privetroute><Dashbord></Dashbord> </Privetroute>
-         }
+        
         ] 
       }
   ]);

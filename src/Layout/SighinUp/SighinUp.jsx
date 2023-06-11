@@ -4,6 +4,7 @@ import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/Authprovider";
 import Swal from "sweetalert2";
+import Sosallogin from "../../Shared/Sosallogin";
 
 
 const SighinUp = () => {
@@ -99,7 +100,7 @@ const SighinUp = () => {
 
 
                 onSubmit={handleSubmit(onSubmit)}>
-                <h2 className="text-3xl py-4 text-center font-semibold">Sighin Up</h2>
+                <h2 className="text-3xl py-2 text-center font-semibold">Sighin Up</h2>
 
 
                 <div >
@@ -127,7 +128,7 @@ const SighinUp = () => {
                         minLength: 6,
                         maxLength: 20,
                         pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/
-                    })} placeholder="password" className=" py-2 w-full" />
+                    })} placeholder="password" className=" py-2 w-full px-3" />
                     <span
                         className="ml-2 cursor-pointer absolute right-3 top-1/2 text-xl"
                         onClick={togglePassword}
@@ -141,7 +142,7 @@ const SighinUp = () => {
 
                 <div className="my-3 relative">
                     <label className="text-xl " htmlFor="">Confirm password*</label>
-                    <input className="w-full py-2 bg-white pl-3 my-2 "
+                    <input className="w-full py-2 bg-white pl-3 my-2 px-3"
                         type={showPassword ? 'text' : 'password'}
                         placeholder="**************"
                         {...register("confirmPassword",
@@ -179,10 +180,10 @@ const SighinUp = () => {
 
                 {errors.password?.type === 'pattern' && <p className="text-red-600">Password must haveone special character, one lowercase one lower case and one number and at least 6 digit</p>}
 
-                <input className="w-full  bg-slate-700 text-white text-xl py-2 my-2" value="Sighin Up" type="submit" />
+                <input className="w-full  bg-[#07332F] text-white text-xl py-2 my-2" value="Sighin Up" type="submit" />
                 <div className="divider">OR</div>
-                <input className="w-full  bg-slate-700 text-white text-xl py-2 my-2" value="Sighin In with gogool" type="submit" />
 
+                <Sosallogin></Sosallogin>
 
                 <p>You Have Already have account? please <span className="font-semibold"><Link to="/sighinIn">Sighin In</Link></span></p>
             </form>

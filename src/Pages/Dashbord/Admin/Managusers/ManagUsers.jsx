@@ -11,7 +11,7 @@ const ManagUsers = () => {
         const res = await axiosSecure.get("/users")
         return res.data;
     })
-
+    console.log(users);
 
 
     const handleMakeAdmin = (user) => {
@@ -99,7 +99,7 @@ const ManagUsers = () => {
                                         <td>{user.role === 'instractor' ? 'instractor' :
                                             <button onClick={() => handleMakeInstractor(user)} className="btn btn-ghost btn-xs">make Instructor</button>
                                         }</td>
-                                        
+
                                     </tr>
                                 </>)
                             }

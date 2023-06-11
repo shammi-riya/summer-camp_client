@@ -21,21 +21,19 @@ const [selectClass] = UseSelectClass()
 
 
   const nav = <>
-    <li className='px-2 text-xl '><NavLink className={({ isActive }) => isActive ? "text-slate-900 border-b-2 border-red-500  " : ""} to="/">Home</NavLink></li>
-    <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-slate-900  border-b-2 border-red-500 " : ""} to="/instractor">Instractor</NavLink></li>
-    <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-slate-900 border-b-2 border-red-500  " : ""} to="/classes">Classes</NavLink></li>
-    <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-slate-900   border-b-2 border-red-500" : ""} to="/dashboard"><button className="btn btn-sm">
+    <li className='px-2 text-xl text-white'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white border-b-2 border-slate-50  " : "text-slate-50"} to="/">Home</NavLink></a></li>
+    <li className='px-2 text-xl'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white  border-b-2 border-slate-50 " : "text-slate-50"} to="/allinstractor">Instractor</NavLink></a></li>
+    <li className='px-2 text-xl'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white border-b-2 border-slate-50  " : "text-slate-50"} to="/classes">Classes</NavLink></a></li>
+    <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-white   border-b-2 border-slate-50" : "text-slate-50"} to="/dashboard"><button className="btn btn-sm">
   Dashbord
   <div className="badge">{selectClass.length}</div>
 </button>
 </NavLink></li>
-    <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-slate-900   border-b-2 border-red-500" : ""} to="/test">test</NavLink></li>
-  </>
-
+</>
 
   return (
 
-    <div style={{ backgroundColor: ' rgb(255, 255, 255)' }} className=" sticky w-full shadow-md">
+    <div   className=" fixed w-full shadow-md bg-[#07332F] top-0 z-10 text-white">
       <div className="navbar md:px-10  lg:px-28">
         <div className="navbar-start ">
           <div className="dropdown">
@@ -66,7 +64,7 @@ const [selectClass] = UseSelectClass()
                 className="btn">Sighin out</button>
              
 
-              <div className="avatar">
+              <div className="avatar ml-3">
                 <div className="w-12">
                   <img src={users.photoURL} />
                 </div>

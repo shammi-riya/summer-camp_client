@@ -15,7 +15,7 @@ import './bannar.css'
 
 const Bannar = () => {
     return (
-      <div className='h-[86vh]'>
+      <div className='h-[86vh] mt-20'>
         <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -31,35 +31,80 @@ const Bannar = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-           <div className='relative w-full text-white'>
+           <div className='relative w-full text-white space-y-3'>
            <img src={bannar2} alt="" />
-           <div className='absolute top-1/2 left-[40%] text-red-700'>
-           <h1 className='text-5xl font-bold'>Hello Summer </h1>
-            <h1 >Childhood Camp</h1>
-          <button className='py-2 px-4 bg-red-600 text-white'>Regastrasion</button>
+           <div className='absolute top-[40%] left-[10%] text-[#07332F] '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
             
 
            </div>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={bannar1} alt="" />
+        <div className='relative w-full text-white space-y-3'>
+           <img src={bannar1} alt="" />
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+           </div >
+            
+
+           </div>
 
         </SwiperSlide>
         <SwiperSlide>
-            <img src={bannar2} alt="" />
+        <div className='relative w-full text-white space-y-3'>
+           <img src={bannar3} alt="" />
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+           </div >
+            
+
+           </div>
 
         </SwiperSlide>
         <SwiperSlide>
-            <img src={bannar3} alt="" />
+        <div className='relative w-full text-white space-y-3'>
+           <img src={bannar4} alt="" />
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+           </div >
+            
+
+           </div>
 
         </SwiperSlide>
         <SwiperSlide>
-            <img src={bannar4} alt="" />
+        <div className='relative w-full text-white space-y-3'>
+           <img src={bannar5} alt="" />
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl '>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+           </div >
+            
+
+           </div>
 
         </SwiperSlide>
         <SwiperSlide>
-            <img src={bannar5} alt="" />
+        <div className='relative w-full text-white space-y-3'>
+           <img src={bannar5} alt="" />
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+          <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+           </div >
+            
+
+           </div>
 
         </SwiperSlide>
       

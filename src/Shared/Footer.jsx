@@ -5,7 +5,7 @@ const Footer = () => {
         <footer
   className="bg-[#07332F] text-center text-white  lg:text-left">
   <div
-    className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+    className="flex items-center justify-center border-b-2 border-neutral-200 p-6 lg:justify-between">
     <div className="mr-12 hidden lg:block">
       <span>Get connected with us on social networks:</span>
     </div>
@@ -101,26 +101,26 @@ const Footer = () => {
       <div className="">
         <h6
           className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-          Products
+          classes
         </h6>
         <p className="mb-4">
           <a href="#!" className="text-white"
-            >Angular</a
+            >Portrait Drawing
+          </a>
+        </p>
+        <p className="mb-4">
+          <a href="#!" className="text-white"
+            >Drwig fundamental</a
           >
         </p>
         <p className="mb-4">
           <a href="#!" className="text-white"
-            >React</a
-          >
-        </p>
-        <p className="mb-4">
-          <a href="#!" className="text-white"
-            >Vue</a
+            >Printer making</a
           >
         </p>
         <p>
           <a href="#!" className="text-white"
-            >Laravel</a
+            >wataer color</a
           >
         </p>
       </div>
@@ -222,6 +222,15 @@ const Footer = () => {
       >Hello Summer</a
     >
   </div>
+
+
+
+  
+
+
+
+
+
 </footer>
     );
 };
