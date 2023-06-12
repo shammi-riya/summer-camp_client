@@ -13,7 +13,7 @@ const UseInstructor = () => {
         enabled: !loading,
         queryFn: async () => {
             const res = await axiosSecure.get(`/users/instractor/${users?.email}`);
-            console.log(res.data.instractor);
+          
              return res.data.instractor;
         }
     })

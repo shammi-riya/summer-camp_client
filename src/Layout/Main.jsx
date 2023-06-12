@@ -1,17 +1,21 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import Footer from "../Shared/Footer";
+import ThemeProvider from "../Provider/ThemeProvider";
 
 
 const Main = () => {
+   
     return (
-        <div>
-            <Navbar></Navbar>
+        <div >
+           <ThemeProvider>
+           <Navbar></Navbar>
            
-            <Outlet></Outlet>
-            
+           <Outlet></Outlet>
            
-            <Footer></Footer>
+          
+           <Footer></Footer>
+           </ThemeProvider>
         </div>
     );
 };

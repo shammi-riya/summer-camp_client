@@ -175,6 +175,8 @@ const SighinUp = () => {
 
                 {/* errors will return when field validation fails  */}
                 {errors.password?.type === 'required' && <p className="text-red-600">Password is required</p>}
+
+                
                 <p className="text-red-500">{error}</p>
                 <p className="text-red-500">{fireBaseerr}</p>
 

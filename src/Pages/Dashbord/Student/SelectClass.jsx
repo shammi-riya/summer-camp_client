@@ -1,14 +1,14 @@
 import Swal from "sweetalert2";
 import UseSelectClass from "../../../Hook/UseSelectClass";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const SelectClass = () => {
 
     const [selectClass, refetch] = UseSelectClass()
-    console.log(selectClass);
+    
     const totalPrice = selectClass.reduce((sum, item) => item.price + sum, 0)
-
+   const navigate = useNavigate()
 
     const handleDelete = (clases) => {
         console.log(clases);
@@ -41,9 +41,12 @@ const SelectClass = () => {
     }
 
 
-
-
     
+
+const handlePay = (clases)=>{
+    
+    navigate("/dashboard/pement", { state: {_id:clases._id, classId:clases.classId ,name:clases.className ,price: clases.price} });
+}
 
 
 
@@ -105,15 +108,15 @@ const SelectClass = () => {
                                                 className=" py-2 px-4 rounded bg-slate-800 text-white text-md">delete</button>
                                         </th>
                                         <th>
-                                            <Link to="/dashboard/pement">
-                                            <button 
-                                                className="btn btn-square">
-                                                Pay
-                                            </button>
-                                            </Link>
+                                          
+                                               
+                                            
+                                                <button onClick={()=>handlePay(clases)} className="btn btn-square">Pay</button>
                                            
+
                                         </th>
 
+                                     
                                     </tr>
 
 

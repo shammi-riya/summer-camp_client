@@ -6,7 +6,7 @@ import UseInstructor from "../../Hook/UseInstructor";
 const DashbordRoute = () => {
     const [isAdmin] = UseAdmin();
 
-    
+    console.log(isAdmin);
 
     const [isInstractor] = UseInstructor();
     console.log(isInstractor);

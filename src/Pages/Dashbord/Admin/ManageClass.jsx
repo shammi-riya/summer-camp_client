@@ -7,8 +7,9 @@ import { useState } from "react";
 const ManageClass = () => {
 
 
-    // const [feedback, setFeedback] = useState("");
-   
+    const [deniedClasses, setDeniedClasses] = useState([])
+    const [appruveClasses, setappruveClasses] = useState([])
+
 
     // const [allClass] = UseAllClass()
     const [axiosSecure] = useAxiosSecure();
@@ -20,6 +21,7 @@ const ManageClass = () => {
 
 
     const handleAppruve = (clases) => {
+        
         fetch(`http://localhost:5000/allClass/${clases._id}`, {
             method: "PATCH"
         })
@@ -27,8 +29,9 @@ const ManageClass = () => {
             .then(data => {
                 console.log(data);
                 if (data.modifiedCount) {
+                    setappruveClasses((prevappruveClasse) => [...prevappruveClasse, clases._id])
                     refetch()
-                    
+
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
@@ -37,7 +40,8 @@ const ManageClass = () => {
                         timer: 1500
                     })
                 }
-              
+
+
             })
 
 
@@ -51,10 +55,11 @@ const ManageClass = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+
                 if (data.modifiedCount) {
+                    setDeniedClasses((prevDeniedClasses) => [...prevDeniedClasses, clases._id]);
                     refetch()
-                    
+
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
@@ -63,7 +68,9 @@ const ManageClass = () => {
                         timer: 1500
                     })
                 }
-              
+
+
+
             })
 
     }
@@ -140,17 +147,22 @@ const ManageClass = () => {
                                     <td>{clases?.price}</td>
                                     <td>{clases.stutus}</td>
                                     <td><button
-                                        disabled={clases.isApproved} // Disable button if isApproved is true
+                                        disabled={appruveClasses.includes(clases._id)} // Disable button if isApproved is true
                                         onClick={() => handleAppruve(clases)}
                                         className={`btn btn-sm bg-[#07332F] text-white`}
                                     >
                                         Approve
                                     </button></td>
-                                    <td><button onClick={()=>handleDenny(clases)}
-                                        className="btn btn-sm bg-red-400 text-white">Deny</button></td>
+                                    <td><button
+                                        disabled={deniedClasses.includes(clases._id)}
+                                        onClick={() => handleDenny(clases)}
+                                        className="btn btn-sm bg-red-400 text-white"
+                                    >
+                                        Deny
+                                    </button></td>
 
 
-                                    <td><button 
+                                    <td><button
                                         className="btn btn-sm bg-red-400 text-white">Feedback</button></td>
 
 

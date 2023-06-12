@@ -59,7 +59,7 @@ const Instructor = () => {
     <SwiperSlide key={instractor._id}>
         
     <div 
-className="flex flex-col justify-center items-center max-w-sm mx-auto my-8">
+className='flex flex-col justify-center items-center max-w-sm mx-auto my-8'>
   <div 
        className="bg-gray-300 h-64 w-72 rounded shadow-md bg-cover bg-center">
         <img className="h-64  w-full rounded-md" src={instractor.img} alt="" />

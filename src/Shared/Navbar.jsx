@@ -3,11 +3,13 @@ import logo2 from '../assets/logo2.png'
 import { useContext } from "react";
 import { AuthContext } from "../Provider/Authprovider";
 import UseSelectClass from "../Hook/UseSelectClass";
+import { ThemeContext } from "../Provider/ThemeProvider";
+ 
 
 
 const Navbar = () => {
 const [selectClass] = UseSelectClass()
-
+const { darkMode, toggleTheme } = useContext(ThemeContext);
   const { logOut, users } = useContext(AuthContext);
 
   const handleLogOut = () => {
@@ -15,6 +17,7 @@ const [selectClass] = UseSelectClass()
         .then(() => { })
         .catch(error => console.log(error));
 }
+
 
 
 
@@ -58,17 +61,17 @@ const [selectClass] = UseSelectClass()
           {
             users ? <>
 
-           
+<div className="avatar mx-3">
+                <div className="w-12">
+                  <img src={users.photoURL} />
+                </div>
+              </div>
 
                 <button onClick={handleLogOut} 
                 className="btn">Sighin out</button>
              
 
-              <div className="avatar ml-3">
-                <div className="w-12">
-                  <img src={users.photoURL} />
-                </div>
-              </div>
+             
 
 
 
@@ -81,6 +84,18 @@ const [selectClass] = UseSelectClass()
 
             </>
           }
+       <div className="mx-2">
+       <button
+            onClick={toggleTheme}
+            className="relative inline-flex items-center h-6 rounded-full w-12 bg-gray-300 dark:bg-gray-700"
+          >
+            <span
+              className={`${
+                darkMode ? 'translate-x-6' : 'translate-x-1'
+              } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
+            />
+          </button>
+       </div>
         </div>
       </div>
     </div>
