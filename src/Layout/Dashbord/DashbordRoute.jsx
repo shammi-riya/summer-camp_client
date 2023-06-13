@@ -43,6 +43,7 @@ const DashbordRoute = () => {
 
                             <li><NavLink to="/dashboard/selected"> Selected Classes</NavLink></li>
                             <li><NavLink to="/dashboard/pement"> pement</NavLink></li>
+                            <li><NavLink to="/dashboard/enroll">Enroll Class</NavLink></li>
 
 
                         </>)
