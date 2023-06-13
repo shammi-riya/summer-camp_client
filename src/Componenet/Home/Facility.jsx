@@ -1,64 +1,90 @@
+import './Facilt.css'
+import im1 from '../../assets/review-1.png'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+
+// import required modules
+import { Pagination } from "swiper";
 
 
 const Facility = () => {
     return (
-        <div className="grid grid-cols-3 gap-6 px-32 my-32">
-            <div className="space-y-3">
-                <p className="text-[#07332F] text-lg">--About Us--</p>
-                <h1 className="text-5xl font-semibold border-b-4 border-[#07332F]">We are the best summer camp</h1>
-                <p className="text-md">7Hills Camp is for Boys and Girls.
+       <div>
+        
+       <h1 className='text-3xl font-semibold text-center border-b-4 w-72 mx-auto'>Our Testimonial</h1>
+         <div className="hero min-h-screen img px-32 my-20" >
+           
+           <div className="hero-content text-center">
+               <div className="max-w-md">
+                   <>
+                       <Swiper
+                           spaceBetween={30}
+                           pagination={{
+                               clickable: true,
+                           }}
+                           modules={[Pagination]}
+                           className="mySwiper"
+                       >
+                           <SwiperSlide>
 
-                    Nestled on the sandy beaches of beautiful Lake Ossipee amidst the White Mountains of New Hampshire, Camp offers a summer experience rich in fun, friendship, learning and adventure. Campers range in age from seven to fifteen.
-                </p>
+                               <div className='py-16 px-10'>
+                                  <div className='w-24 h-24 mx-auto'>
+                                  <img  src={im1} alt="" />
+                                  </div>
+                                  
+                                   <p className="mb-5">Enjoy the beauty of stunning sights and landmarks assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                   <h2>--Mandis Thamara</h2>
+                                  
+                               </div>
 
-<div className="text-left">
-<button className="py-2 px-3 bg-[#07332F] text-white hover:bg-slate-50 transition-all hover:text-[#07332F] border-2 border-[#07332F] rounded-lg text-xl"> Find out more</button>
+                           </SwiperSlide>
+                           <SwiperSlide>
 
-    </div>            </div>
+                               <div className='py-16 px-10'>
+                                  <div className='w-24 h-24 mx-auto'>
+                                  <img  src={im1} alt="" />
+                                  </div>
+                                  
+                                   <p className="mb-5">Enjoy the beauty of stunning sights and landmarks assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                   <h2>--Mandis Thamara</h2>
+                                  
+                               </div>
 
+                           </SwiperSlide>
+                           <SwiperSlide>
 
+                               <div className='py-16 px-10'>
+                                  <div className='w-24 h-24 mx-auto'>
+                                  <img  src={im1} alt="" />
+                                  </div>
+                                  
+                                   <p className="mb-5">Enjoy the beauty of stunning sights and landmarks assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                   <h2>--Mandis Thamara</h2>
+                                  
+                               </div>
 
+                           </SwiperSlide>
+                           
 
-            <div className="space-y-3 text-2xl">
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                    Facilities</h1>
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                    Age 7-5</h1>
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                    Team And Indifial Sports</h1>
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                Waterfront Activities</h1>
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                Special Events & Trips</h1>
-                <h1><span className="mx-3"><input type="checkbox" checked="checked" className="checkbox checkbox-xs" />
-                </span>
-
-
-                professional staff</h1>
-            </div>
-
-            <div>
-                hello
-            </div>
+                       </Swiper>
 
 
-        </div>
-    );
+</>
+
+
+                  
+               </div>
+               </div>
+           </div>
+       </div>
+            
+            );
 };
 
-export default Facility;
+ export default Facility;

@@ -1,17 +1,23 @@
 import useClass from "../Hook/useClass";
-
+import { Fade, Slide } from "react-awesome-reveal"
 
 const PopolarclassName = () => {
   const [topClass] = useClass()
 
   return (
     <div className="my-10">
+      <Slide>
       <h1 className="text-3xl my-5 font-bold text-center text-[#053b36] w-80 mx-auto border-[#053b36] border-b-4">Our Popular Class</h1>
+      </Slide>
+     
       <div className="grid md:grid-cols-2 max-w-7xl mx-auto my-20 lg:grid-cols-3 gap-8">
         {
           topClass.map(classes => <>
 
-            <div className="card w-96 bg-base-100 shadow-xl">
+<Fade delay={1e3} cascade damping={1e-1}>
+        
+     
+<div className="card w-96 bg-base-100 shadow-xl">
               <figure><img className="h-[300px] w-full " src={classes.img} alt="Shoes" /></figure>
               <div className="card-body text-[#053b36]">
                 <h2 className="card-title">
@@ -25,6 +31,9 @@ const PopolarclassName = () => {
                 </div>
               </div>
             </div>
+
+</Fade>
+            
 
           </>)
         }

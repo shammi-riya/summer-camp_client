@@ -1,0 +1,8 @@
+.img{
+    background-image: url(../../assets/vehicles-pattern.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 400px 0; */
+    height: min-content;
+   position: sticky;
+}
