@@ -21,6 +21,7 @@ import AllIntractor from "../Pages/AllIntractor/AllIntractor";
 import ErrElement from "../Pages/ErrElement";
 import Enrolldclass from "../Pages/Dashbord/Student/Enrolldclass";
 import AdminRoute from "./AdminRoute";
+import Instractorroute from "./Instractorroute";
 
   const router = createBrowserRouter([
     {
@@ -61,11 +62,11 @@ import AdminRoute from "./AdminRoute";
           // user/student
           {
             path:"selected",
-            element:<SelectClass></SelectClass>
+            element:<Privetroute><SelectClass></SelectClass></Privetroute>
           },
           {
             path:"enroll",
-            element:<Enrolldclass></Enrolldclass>
+            element:<Privetroute><Enrolldclass></Enrolldclass></Privetroute>
           },
           {
             path:"pement",
@@ -78,16 +79,16 @@ import AdminRoute from "./AdminRoute";
           },
           {
             path:"managClass",
-            element:<ManageClass></ManageClass>
+            element:<AdminRoute><ManageClass></ManageClass></AdminRoute>
           },
           // instractor
           {
             path:"addClass",
-            element:<AddClass></AddClass>
+            element:<Instractorroute><AddClass></AddClass></Instractorroute>
           },
           {
             path:"myClass",
-            element:<MyClass></MyClass>
+            element:<Instractorroute><MyClass></MyClass></Instractorroute>
           },
         
         ] 

@@ -63,7 +63,7 @@ const SingleClass = ({singleClass}) => {
 
     return (
         <div style={cardStyle}
-        className="card card-compact bg-base-100 shadow-xl">
+        className="card card-compact bg-base-100 shadow-xl my-28">
         <figure><img className="h-[300px] w-full" src={img} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title">{className}</h2>
