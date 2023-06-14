@@ -16,7 +16,7 @@ const SingleClass = ({singleClass}) => {
   const handleSelect = ()=>{
      if(users){
       const saveClass = {classId:_id ,className, img,instructorName,availableSeats,price,numberOfStudents,email:users.email}
-       fetch("http://localhost:5000/selectClass",{
+       fetch("https://summer-camp-surver.vercel.app/selectClass",{
         method:"POST",
         headers:{
           "content-type":"application/json"

@@ -13,7 +13,7 @@ const AddClass = () => {
     const onSubmit = data => {
 
 
-        fetch("http://localhost:5000/class",{
+        fetch("https://summer-camp-surver.vercel.app/class",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

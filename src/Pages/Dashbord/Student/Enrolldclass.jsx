@@ -5,7 +5,7 @@ const Enrolldclass = () => {
    const [enrolslData,setEnrollsData] = useState([])
 
 
-    fetch("http://localhost:5000/enrollClass")
+    fetch("https://summer-camp-surver.vercel.app/enrollClass")
     .then(res=>res.json())
     .then(data=>setEnrollsData(data))
    

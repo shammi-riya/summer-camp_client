@@ -16,7 +16,7 @@ const Sosallogin = () => {
                 const user = result.user;
                 const saveUserData = { name: user.displayName, img: user.photoURL, email: user.email }
                
-                fetch("http://localhost:5000/users", {
+                fetch("https://summer-camp-surver.vercel.app/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"

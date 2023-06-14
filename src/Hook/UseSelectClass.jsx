@@ -8,7 +8,7 @@ const UseSelectClass = () => {
     const { users,loading } = useContext(AuthContext);
 
     
-    // const token = localStorage.getItem("access-token")
+   
     const [axiosSecure] = useAxiosSecure();
     const { refetch, data: selectClass = [] } = useQuery({
         queryKey: ['selectClass', users?.email],

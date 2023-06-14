@@ -15,7 +15,7 @@ const ManagUsers = () => {
 
 
     const handleMakeAdmin = (user) => {
-        fetch(`http://localhost:5000/users/admin/${user._id}`, {
+        fetch(`https://summer-camp-surver.vercel.app/users/admin/${user._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())
@@ -35,7 +35,7 @@ const ManagUsers = () => {
 
     }
     const handleMakeInstractor = (user) => {
-        fetch(`http://localhost:5000/users/instractor/${user._id}`, {
+        fetch(`https://summer-camp-surver.vercel.app/users/instractor/${user._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())

@@ -39,7 +39,7 @@ const ManageClass = () => {
     };
 
     const handleSubmit = () => {
-        fetch(`http://localhost:5000/allClass/${feedbackId}`, {
+        fetch(`https://summer-camp-surver.vercel.app/allClass/${feedbackId}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
@@ -66,7 +66,7 @@ const ManageClass = () => {
     
     const handleAppruve = (clases) => {
 
-        fetch(`http://localhost:5000/allClass/Approve/${clases._id}`, {
+        fetch(`https://summer-camp-surver.vercel.app/allClass/Approve/${clases._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())
@@ -94,7 +94,7 @@ const ManageClass = () => {
 
 
     const handleDenny = (clases) => {
-        fetch(`http://localhost:5000/allClass/danny/${clases._id}`, {
+        fetch(`https://summer-camp-surver.vercel.app/allClass/danny/${clases._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())

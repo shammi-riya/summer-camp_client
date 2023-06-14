@@ -21,7 +21,7 @@ const Facility = () => {
          <div className="hero min-h-screen img px-32 my-20" >
            
            <div className="hero-content text-center">
-               <div className="max-w-md">
+               <div className="max-w-md lg:block hidden">
                    <>
                        <Swiper
                            spaceBetween={30}

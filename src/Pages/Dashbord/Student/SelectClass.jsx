@@ -23,7 +23,7 @@ const SelectClass = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/selectClass/${clases._id}`, {
+                fetch(`https://summer-camp-surver.vercel.app/selectClass/${clases._id}`, {
                     method: 'DELETE'
                 }).then(res => res.json())
                     .then(data => {

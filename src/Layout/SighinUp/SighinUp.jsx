@@ -46,7 +46,7 @@ const SighinUp = () => {
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const saveUserData = { name: data.name, img: data.photoURL, email: data.email }
-                        fetch("http://localhost:5000/users", {
+                        fetch("https://summer-camp-surver.vercel.app/users", {
                             method: "POST",
                             headers: {
                                 "content-type": "application/json"

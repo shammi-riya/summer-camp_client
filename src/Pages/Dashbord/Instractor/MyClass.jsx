@@ -3,12 +3,12 @@ import { useContext, useEffect } from "react";
 import { useState } from "react";
 
 const MyClass = () => {
-  const { users, loading } = useContext(AuthContext);
+  const { users } = useContext(AuthContext);
   const [instractorClass, setInstractorClass] = useState([]);
 
   useEffect(() => {
     if (users) {
-      fetch(`http://localhost:5000/instractor/${users?.email}`)
+      fetch(`https://summer-camp-surver.vercel.app/instractor/${users?.email}`)
         .then((res) => res.json())
         .then((data) => {
           console.log(data, 'data');
