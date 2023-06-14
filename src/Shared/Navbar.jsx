@@ -27,13 +27,7 @@ const { darkMode, toggleTheme } = useContext(ThemeContext);
     <li className='px-2 text-xl text-white'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white border-b-2 border-slate-50  " : "text-slate-50"} to="/">Home</NavLink></a></li>
     <li className='px-2 text-xl'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white  border-b-2 border-slate-50 " : "text-slate-50"} to="/allinstractor">Instractor</NavLink></a></li>
     <li className='px-2 text-xl'><a href=""><NavLink className={({ isActive }) => isActive ? "text-white border-b-2 border-slate-50  " : "text-slate-50"} to="/classes">Classes</NavLink></a></li>
-    {
-      users && <li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-white   border-b-2 border-slate-50" : "text-slate-50"} to="/dashboard"><button className="btn btn-sm">
-      Dashbord
-      <div className="badge">{selectClass.length}</div>
-    </button>
-    </NavLink></li>
-    }
+   
 </>
 
   return (
@@ -62,8 +56,12 @@ const { darkMode, toggleTheme } = useContext(ThemeContext);
         <div className="navbar-end">
           {
             users ? <>
-
-<div className="avatar mx-3">
+<li className='px-2 text-xl'><NavLink className={({ isActive }) => isActive ? "text-white   border-b-2 border-slate-50" : "text-slate-50"} to="/dashboard"><button className="btn btn-sm">
+      Dashbord
+      <div className="badge">{selectClass.length}</div>
+    </button>
+    </NavLink></li>
+          <div className="avatar mx-3">
                 <div className="w-12">
                   <img src={users.photoURL} />
                 </div>
