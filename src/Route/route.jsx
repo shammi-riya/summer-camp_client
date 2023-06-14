@@ -51,10 +51,7 @@ import Instractorroute from "./Instractorroute";
         path:"/sighinUp",
         element:<SighinUp></SighinUp>
     },
-    {
-        path:"/test",
-        element:<Privetroute><Test></Test></Privetroute>
-    },
+    
     {
        path:"dashboard",
        element:<DashbordRoute></DashbordRoute>,
