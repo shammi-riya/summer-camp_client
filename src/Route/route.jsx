@@ -9,7 +9,7 @@ import SighinUp from "../Layout/SighinUp/SighinUp";
 
 import Classes from "../Pages/Classes/Classes";
 import Privetroute from "./Privetroute";
-import Test from "../Pages/Test";
+
 import SelectClass from "../Pages/Dashbord/Student/SelectClass";
 import DashbordRoute from "../Layout/Dashbord/DashbordRoute";
 import ManagUsers from "../Pages/Dashbord/Admin/Managusers/ManagUsers";

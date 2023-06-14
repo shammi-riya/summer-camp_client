@@ -20,7 +20,7 @@ const Instructor = () => {
 
 
     return (
-        <div className="my-32 px-32">
+        <div className="my-32 lg:px-32 px-5">
            <h1 className="text-3xl my-5 font-bold text-center text-[#053b36] w-80 mx-auto border-[#053b36] border-b-4">Our Instructor</h1>
 
            <>

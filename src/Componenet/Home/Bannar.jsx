@@ -31,25 +31,31 @@ const Bannar = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-           <div className='relative w-full text-white space-y-3'>
+        <div className='relative w-full text-white space-y-3'>
            <img src={bannar2} alt="" />
-           <div className='absolute top-[40%] left-[10%] text-[#07332F] '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
-            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+           <div className='absolute top-[40%] left-[10%] text-white '>
+           <h1 className='lg:text-6xl text-center text-3xl font-bold'>Hello Summer </h1>
+           <div className='hidden lg:block'>
+           <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
+           </div>
             
 
            </div>
+
+      
         </SwiperSlide>
         <SwiperSlide>
         <div className='relative w-full text-white space-y-3'>
            <img src={bannar1} alt="" />
            <div className='absolute top-[40%] left-[10%] text-white '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
-            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
+           <h1 className='lg:text-6xl text-center text-3xl font-bold'>Hello Summer </h1>
+           <div className='hidden lg:block'>
+           <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
+           </div>
             
 
            </div>
@@ -59,23 +65,26 @@ const Bannar = () => {
         <div className='relative w-full text-white space-y-3'>
            <img src={bannar3} alt="" />
            <div className='absolute top-[40%] left-[10%] text-white '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
-            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
+           <h1 className='lg:text-6xl text-center text-3xl font-bold'>Hello Summer </h1>
+           <div className='hidden lg:block'>
+           <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
+           </div>
             
 
            </div>
-
         </SwiperSlide>
         <SwiperSlide>
         <div className='relative w-full text-white space-y-3'>
            <img src={bannar4} alt="" />
            <div className='absolute top-[40%] left-[10%] text-white '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
-            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+           <h1 className='lg:text-6xl text-center text-3xl font-bold'>Hello Summer </h1>
+           <div className='hidden lg:block'>
+           <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
+           </div>
             
 
            </div>
@@ -85,9 +94,11 @@ const Bannar = () => {
         <div className='relative w-full text-white space-y-3'>
            <img src={bannar5} alt="" />
            <div className='absolute top-[40%] left-[10%] text-white '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
+           <h1 className='lg:text-6xl text-3xl font-bold'>Hello Summer </h1>
+            <div className='lg:block hidden '>
             <h1 className='text-xl '>Summer camp is a program for children or teens during summer months  in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
+            </div>
            </div >
             
 
@@ -98,10 +109,12 @@ const Bannar = () => {
         <div className='relative w-full text-white space-y-3'>
            <img src={bannar5} alt="" />
            <div className='absolute top-[40%] left-[10%] text-white '>
-           <h1 className='text-6xl font-bold'>Hello Summer </h1>
-            <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
+           <h1 className='lg:text-6xl text-center text-3xl font-bold'>Hello Summer </h1>
+           <div className='hidden lg:block'>
+           <h1 className='text-xl mx-50'>Summer camp is a program for children or teens during summer months in many countries. Children and adolescents are called campers.</h1>
           <button className='py-3 mt-4 rounded-md px-5 bg-[#07332F] text-white'>Regastrasion</button>
            </div >
+           </div>
             
 
            </div>
